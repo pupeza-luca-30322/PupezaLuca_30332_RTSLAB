@@ -2,6 +2,7 @@ package Lab2.Ex1;
 
 public class Fir extends Thread {
     private int id;
+
     private ProgressModel model;
     private int processorLoad;
 
