@@ -10,15 +10,6 @@ public class Main {
         w1.start();
         w2.start();
 
-        try{
-            w1.join();
-            w2.join();
-        }
-        catch(InterruptedException e){
-            e.printStackTrace();
-        }
-
-        System.out.println(Main.sum);
 
     }
 

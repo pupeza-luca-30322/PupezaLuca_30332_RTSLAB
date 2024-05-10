@@ -36,6 +36,7 @@ class JoinTestThread extends Thread{
             if(randomNumber % div == 0)
             {
                 numDiv++;
+                Main.sum += div;
                 System.out.println(div + " for " + randomNumber);
             }
 
@@ -60,6 +61,8 @@ class JoinTestThread extends Thread{
             System.out.println("Thread "+n+" has terminated operation.");
 
         }
-        catch(Exception e){e.printStackTrace();}
+        catch(Exception e){e.printStackTrace();
+        }
+        System.out.println(Main.sum + this.getName());
     }
 }
